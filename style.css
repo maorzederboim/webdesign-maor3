@@ -1,56 +1,101 @@
-@font-face {
-  font-family: 'opensans';
-  src: url('fonts/opensans/100/opensanshebrew-light.woff') format('woff');
-  font-weight: 100;
-  font-style: normal;
+@font-face {font-family: 'opensans';
+src: url('fonts/opensans/100/opensanshebrew-light.woff') format('woff');
+font-weight: 100;
+font-style: normal;
 }
+
 @font-face {
-  font-family: 'opensans';
-  src: url('fonts/opensans/400/opensanshebrew-regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
+    font-family: 'opensans';
+    src: url('fonts/opensans/400/opensanshebrew-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
 }
+
 @font-face {
-  font-family: 'opensans';
-  src: url('fonts/opensans/700/opensanshebrew-bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
+    font-family: 'opensans';
+    src: url('fonts/opensans/700/opensanshebrew-bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
 }
 
 body {
-  margin: 0;
-  font-family:'opensans', arial, sans-serif;
-  line-height: 1.5;
+    margin: 0;
+    font-family: 'opensans', arial, sans-serif;
+    line-height: 1.5;
 }
-h1{
-    font-size:50px;
+
+h1 {
+    font-size: 50px;
     font-weight: 700;
-    margin-top: 0px;
-    margin-bottom: 5px;
-}
-.about{
-  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/cake2.jpg) center top 38%;
-  background-attachment: fixed;
-  font-size: 24px;
-  color: #fff;
     margin: auto;
+    margin-top: 30px;
 }
+
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/cake2.jpg) center top 38%;
+    background-attachment: fixed;
+    font-size: 24px;
+    color: #fff;
+    margin: auto;
+    background-size: cover;
+    padding: 30px 0;
+}
+
 .logo {
     display: block;
     margin: 10px auto;
     padding: 10px;
 }
-.about .container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    align-items: center;
-    grid-gap: 0px;
-}
+
 .container {
     max-width: 1000px;
     margin: auto;
 }
-h2{
-    margin-top: 5px;
+
+h1:after {
+    content: "";
+    border-bottom: 4px solid #f38597;
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+h2 {
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+h3 {
     font-weight: 400;
+    text-align: center;
+    color: #07bfe3;
+    font-size: 20px;
+}
+
+h3:after {
+    content: "";
+    border-bottom: 2px solid #f38597;
+    width: 80px;
+    display: block;
+    margin: auto;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+    background: #07bfe3;
+    padding: 15px 30px;
+    display: inline-block;
+    border-radius: 15px;
+    transition: 1s;
+}
+
+.button:hover {
+    background: #5482fa;
+    color: white;
+}
+
+.about {
+    margin: auto;
+    text-align: center;
 }
