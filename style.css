@@ -54,7 +54,7 @@ h1 {
 
 h1:after {
     content: "";
-    border-bottom: 4px solid #f38597;
+    border-bottom: 3.5px solid #f38597;
     width: 300px;
     display: block;
     margin: auto;
