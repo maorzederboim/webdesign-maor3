@@ -1,7 +1,8 @@
-@font-face {font-family: 'opensans';
-src: url('fonts/opensans/100/opensanshebrew-light.woff') format('woff');
-font-weight: 100;
-font-style: normal;
+@font-face {
+    font-family: 'opensans';
+    src: url('fonts/opensans/100/opensanshebrew-light.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
 }
 
 @font-face {
@@ -18,17 +19,40 @@ font-style: normal;
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'ambivalenti';
+    src: url('fonts/ambivalenti/300/ambivalenti-tzar-aaa-300.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ambivalenti';
+    src: url('fonts/ambivalenti/400/ambivalenti-tzar-aaa-400.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ambivalenti';
+    src: url('fonts/ambivalenti/700/ambivalenti-tzar-aaa-700.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
 body {
     margin: 0;
-    font-family: 'opensans', arial, sans-serif;
     line-height: 1.5;
+    font-family: 'opensans', arial, sans-serif;
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 70px;
     font-weight: 700;
     margin: auto;
     margin-top: 30px;
+    font-family: 'ambivalenti', arial, sans-serif;
+    padding: 0px;
 }
 
 .banner {
@@ -58,36 +82,41 @@ h1:after {
     width: 300px;
     display: block;
     margin: auto;
+    margin-bottom: 20px;
+    margin-top: 0px;
 }
 
 h2 {
-    margin-top: 10px;
-    font-weight: 700;
+    margin-top: 0px;
+    font-weight: 400;
+    font-family: 'ambivalenti', arial, sans-serif;
+    color: #fff;
+    font-size: 27px;
+    padding: 0px;
+    margin-bottom: 30px;
 }
 
 h3 {
-    font-weight: 400;
-    text-align: center;
-    color: #07bfe3;
-    font-size: 20px;
-}
-
-h3:after {
+    font-weight: 700;
+    font-size: 15px;
     content: "";
     border-bottom: 2px solid #f38597;
-    width: 80px;
+    width: 100px;
     display: block;
     margin: auto;
+    color: #fff;
+    margin-top: 13px;
 }
 
 .button {
     text-decoration: none;
     color: white;
     background: #07bfe3;
-    padding: 15px 30px;
+    padding: 10px 23px;
     display: inline-block;
     border-radius: 15px;
     transition: 1s;
+    font-size: 13px;
 }
 
 .button:hover {
@@ -95,7 +124,46 @@ h3:after {
     color: white;
 }
 
-.about {
+.banner .container {
     margin: auto;
     text-align: center;
+    background: none;
 }
+
+.features {
+    background: #fff;
+    text-align: center;
+    background-color: #f38597;
+    padding: 30px;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.features img {
+    max-width: 70px;
+}
+
+.features h2:after {
+    margin: auto;
+}
+
+ul {
+    margin-top: 0px;
+}
+
+p {
+    max-width: 130px;
+    margin: auto;
+    font-size: 13px;
+    color: #fff;
+}
+
+#f3d5d7
