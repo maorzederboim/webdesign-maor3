@@ -54,7 +54,23 @@ h1 {
     font-family: 'ambivalenti', arial, sans-serif;
     padding: 0px;
 }
-
+.header{
+    
+}
+nav ul{
+   list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    font-size: 15px;
+}
 .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/cake2.jpg) center top 38%;
     background-attachment: fixed;
@@ -62,7 +78,8 @@ h1 {
     color: #fff;
     margin: auto;
     background-size: cover;
-    padding: 60px 0;
+    padding-bottom: 60px;
+    padding-top: 20px;
     position: relative;
 }
 
@@ -91,7 +108,6 @@ h2 {
     margin-top: 0px;
     font-weight: 400;
     font-family: 'ambivalenti', arial, sans-serif;
-    color: #fff;
     font-size: 27px;
     padding: 0px;
     margin-bottom: 30px;
@@ -114,7 +130,7 @@ h3 {
     display: inline-block;
     border-radius: 15px;
     transition: 1s;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .button:hover {
@@ -129,12 +145,11 @@ h3 {
 }
 
 .features {
-    background: #fff;
     text-align: center;
-    background-color: #f38597;
+    background-color: #f68484;
     padding: 30px;
+    color: #fff;
 }
-
 .features ul {
     list-style: none;
     padding: 0;
@@ -143,7 +158,6 @@ h3 {
     grid-gap: 30px;
     max-width: 800px;
     margin: auto;
-    color: #fff;
 }
 
 .features img {
@@ -153,7 +167,6 @@ h3 {
 .features h2:after {
     margin: auto;
 }
-
 ul {
     margin-top: 0px;
 }
@@ -165,7 +178,7 @@ p {
 }
 
 footer {
-    background: #07bfe3;
+    background: #000;
     color: #fff;
     text-align: center;
     padding: 10px;
@@ -173,7 +186,7 @@ footer {
 }
 
 footer a {
-    color: #fff;
+    color: #07bfe3;
 }
 
 footer p {
@@ -224,20 +237,21 @@ footer img {
 .about .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
+    grid-gap: 20px;
     align-items: center;
+    width:750px; 
 }
 
 .about img {
-    max-width: 60%;
+    max-width:60%;
     display: block;
     margin: auto;
 }
 
 .about h2 {
-    color: #f38597;
+    color:#07bfe3;
     content: "";
-    border-right: solid #f38597;
+    border-right: solid #07bfe3;
     border-right-width: 3px;
     padding: 0px;
     margin-top: 20px;
@@ -249,6 +263,7 @@ footer img {
 .about p {
     max-width: 500px;
     margin: 10px;
+    font-size: 15px;
 }
 
 .custom-shape-divider-bottom-1617375300 {
@@ -269,7 +284,7 @@ footer img {
 }
 
 .custom-shape-divider-bottom-1617375300 .shape-fill {
-    fill: #f38597;
+    fill: #f68484;
 }
 
 #f3d5d7
