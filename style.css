@@ -54,22 +54,29 @@ h1 {
     font-family: 'ambivalenti', arial, sans-serif;
     padding: 0px;
 }
-.header{
-    
-}
 nav ul{
    list-style: none;
     padding: 0;
     display: flex;
-    justify-content: center;
-    font-weight: 700;
+    justify-content: space-between;
+    font-weight: 400;
 }
 nav a{
     text-decoration: none;
     color: #fff;
-    padding: 10px;
+    padding: 10px 0px;
     display: block;
     font-size: 15px;
+    border-bottom: 3px solid transparent;
+}
+nav a:hover {
+  border-bottom-color: #fff;
+}
+.current a {
+  font-weight: bold;
+}
+header .container{
+    max-width: 500px;
 }
 .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/cake2.jpg) center top 38%;
@@ -90,7 +97,7 @@ nav a{
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 750px;
     margin: auto;
 }
 
@@ -170,7 +177,6 @@ h3 {
 ul {
     margin-top: 0px;
 }
-
 p {
     max-width: 150px;
     margin: auto;
