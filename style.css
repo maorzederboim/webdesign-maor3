@@ -54,14 +54,16 @@ h1 {
     font-family: 'ambivalenti', arial, sans-serif;
     padding: 0px;
 }
-nav ul{
-   list-style: none;
+
+nav ul {
+    list-style: none;
     padding: 0;
     display: flex;
     justify-content: space-between;
     font-weight: 400;
 }
-nav a{
+
+nav a {
     text-decoration: none;
     color: #fff;
     padding: 10px 0px;
@@ -69,15 +71,19 @@ nav a{
     font-size: 15px;
     border-bottom: 3px solid transparent;
 }
+
 nav a:hover {
-  border-bottom-color: #fff;
+    border-bottom-color: #fff;
 }
+
 .current a {
-  font-weight: bold;
+    font-weight: bold;
 }
-header .container{
+
+header .container {
     max-width: 500px;
 }
+
 .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/cake2.jpg) center top 38%;
     background-attachment: fixed;
@@ -90,6 +96,29 @@ header .container{
     position: relative;
 }
 
+.pricelist .banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(img/cake10.jpg) center top 25%;
+}
+
+.product .banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(img/product.jpg) center top 20%;
+}
+
+.workshop .banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(img/stor.jpg) center top 20%;
+}
+
+.recipes .banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(img/recipes.jpg) center top 30%;
+}
+.contact .banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(img/contact.jpg) center top 30%;
+}
 .logo {
     display: block;
     margin: 10px auto;
@@ -97,7 +126,7 @@ header .container{
 }
 
 .container {
-    max-width: 750px;
+    width: 800px;
     margin: auto;
 }
 
@@ -111,18 +140,39 @@ h1:after {
     margin-top: 0px;
 }
 
+.pricelist h1:after {
+    width: 90px;
+}
+
+.product h1:after {
+    width: 120px;
+}
+
+.workshop h1:after {
+    width: 110px;
+}
+
+.recipes h1:after {
+    width: 120px;
+}
+
+.contact h1:after {
+    width: 120px;
+}
+
 h2 {
     margin-top: 0px;
     font-weight: 400;
     font-family: 'ambivalenti', arial, sans-serif;
-    font-size: 27px;
+    font-size: 32px;
     padding: 0px;
     margin-bottom: 30px;
+    margin: auto;
 }
 
 h3 {
     font-weight: 700;
-    font-size: 15px;
+    font-size: 17px;
     display: block;
     margin: auto;
     color: #fff;
@@ -157,6 +207,7 @@ h3 {
     padding: 40px;
     color: #fff;
 }
+
 .features ul {
     list-style: none;
     padding: 0;
@@ -174,13 +225,15 @@ h3 {
 .features h2:after {
     margin: auto;
 }
+
 ul {
     margin-top: 0px;
 }
+
 p {
     max-width: 150px;
     margin: auto;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 footer {
@@ -209,7 +262,7 @@ footer img {
 }
 
 .social {
-   padding: 10px;
+    padding: 10px;
 }
 
 .custom-shape-divider-bottom-1617375206 {
@@ -242,27 +295,27 @@ footer img {
 
 .about .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-gap: 20px;
     align-items: center;
-    width:750px; 
+    width: 800px;
 }
 
 .about img {
-    max-width:60%;
+    max-width: 80%;
     display: block;
     margin: auto;
 }
 
 .about h2 {
-    color:#07bfe3;
+    color: #07bfe3;
     content: "";
     border-bottom: 3px solid #07bfe3;
     width: 77px;
     padding: 0px;
     margin-top: 0px;
     font-weight: 400;
-    margin: 0px;
+    margin: 10px;
     font-size: 38px;
 }
 
@@ -293,4 +346,204 @@ footer img {
     fill: #f68484;
 }
 
-#f3d5d7
+.menu {
+    list-style: none;
+    padding: 0px;
+    font-size: 24px;
+    columns: 2;
+    column-gap: 40px;
+    width: 800px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.menu li {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.line {
+    flex: 1;
+    border-bottom: 2px solid #f68484;
+    height: 1em;
+    margin: 0 5px;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.price-wrap {
+    padding: 56px 0;
+}
+
+.price-wrap img {
+    width: 100px;
+    margin: auto;
+    display: block;
+}
+
+.price-wrap h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.price-wrap h2:after {
+    margin: auto;
+}
+
+.gallery {
+    list-style: none;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.gallery img {
+    max-width: 160px;
+    display: block;
+    margin: auto;
+}
+
+.about2 h2 {
+    color: #07bfe3;
+    content: "";
+    border-bottom: 3px solid #07bfe3;
+    width: 158px;
+    padding: 0px;
+    margin-top: 0px;
+    font-weight: 400;
+    margin: 0px;
+    font-size: 38px;
+    margin-bottom: 35px;
+}
+
+.about2 {
+    padding-top: 30px;
+}
+
+.title1 {
+    font-weight: 700;
+    text-align: center;
+    color: #f68484;
+    margin-top: 10px;
+}
+
+.price1 {
+    text-align: center;
+}
+
+.gallery1 {
+    list-style: none;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.gallery1 img {
+    max-width: 160px;
+    display: block;
+    margin: auto;
+}
+
+.about3 h2 {
+    color: #07bfe3;
+    content: "";
+    border-bottom: 3px solid #07bfe3;
+    width: 170px;
+    padding: 0px;
+    margin-top: 0px;
+    font-weight: 400;
+    margin: 0px;
+    font-size: 38px;
+    margin-bottom: 35px;
+}
+
+.about3 {
+    padding-top: 30px;
+}
+
+.about4 h2 {
+    color: #07bfe3;
+    content: "";
+    border-bottom: 3px solid #07bfe3;
+    width: 190px;
+    padding: 0px;
+    margin-top: 0px;
+    font-weight: 400;
+    margin: 0px;
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.about4 {
+    padding-top: 40px;
+}
+
+.about4 .container {
+    width: 730px;
+}
+
+.about6 h2 {
+    margin: 0px;
+    color: #07bfe3;
+    content: "";
+    border-bottom: 3px solid #07bfe3;
+    font-weight: 400;
+    font-size: 38px;
+    width: 140px;
+    margin-top: 30px;
+}
+
+.news {
+    text-align: center;
+}
+
+span {
+    font-weight: 700;
+}
+
+label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+label span {
+    display: block;
+}
+
+input {
+    font: inherit;
+    color: #f68484;
+    background: none;
+    border: 1px solid;
+    padding: 10px;
+}
+
+.news .button {
+    text-decoration: none;
+    color: white;
+    background: #07bfe3;
+    padding: 10px 23px;
+    display: inline-block;
+    border-radius: 10px;
+    transition: 1s;
+    font-size: 14px;
+    margin-bottom: 60px;
+    margin-top: 12px;
+}
+
+.news .button:hover {
+    background: #5482fa;
+    color: white;
+}
+
+input.remark {
+    padding: 40px;
+}
