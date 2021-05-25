@@ -45,7 +45,8 @@ body {
     line-height: 1.5;
     font-family: 'opensans', arial, sans-serif;
 }
-img{
+
+img {
     max-width: 100%;
 }
 
@@ -118,10 +119,12 @@ header .container {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url(img/recipes.jpg) center top 30%;
 }
+
 .contact .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url(img/contact.jpeg) center top 50%;
 }
+
 .logo {
     display: block;
     margin: 10px auto;
@@ -191,6 +194,7 @@ h3 {
     border-radius: 15px;
     transition: 1s;
     font-size: 14px;
+    border: 0;
 }
 
 .button:hover {
@@ -243,8 +247,8 @@ footer {
     background: #000;
     color: #fff;
     text-align: center;
-    padding: 10px;
-    font-size: 12px;
+    padding: 25px;
+    font-size: 15px;
 }
 
 footer a {
@@ -328,6 +332,11 @@ footer img {
     margin-top: 15px;
 }
 
+.slide .container {
+    display: block;
+    margin: auto;
+}
+
 .custom-shape-divider-bottom-1617375300 {
     position: absolute;
     bottom: 0;
@@ -352,22 +361,22 @@ footer img {
 .menu {
     list-style: none;
     padding: 0px;
-    font-size: 24px;
-    columns: 2;
-    column-gap: 40px;
-    width: 800px;
-    margin-top: 30px;
-    font-size: 20px;
+    columns: 1;
+    width: 500px;
+    margin-top: 40px;
+    font-size: 18px;
+    margin: auto;
+    margin-bottom: 50px;
 }
 
 .menu li {
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 17px;
 }
 
 .line {
     flex: 1;
-    border-bottom: 2px solid #f68484;
+    border-bottom: 2px solid #07bfe3;
     height: 1em;
     margin: 0 5px;
 }
@@ -466,10 +475,7 @@ footer img {
 }
 
 .about4 h2 {
-    color: #07bfe3;
-    content: "";
-    border-bottom: 3px solid #07bfe3;
-    width: 190px;
+    color: #fff;
     padding: 0px;
     margin-top: 0px;
     font-weight: 400;
@@ -480,10 +486,11 @@ footer img {
 
 .about4 {
     padding-top: 40px;
+    background: #f68484;
 }
 
 .about4 .container {
-    width: 730px;
+    width: 350px;
 }
 
 .about6 h2 {
@@ -497,8 +504,12 @@ footer img {
     margin-top: 30px;
 }
 
-.news {
-    text-align: center;
+.about6 .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 60px;
+    align-items: center;
+    width: 800px;
 }
 
 span {
@@ -514,12 +525,13 @@ label span {
     display: block;
 }
 
-input, textarea {
+input,
+textarea {
     font: inherit;
     color: inherit;
     color: #fff;
     background: none;
-    border: 1px solid #f68484 ;
+    border: 1px solid #fff;
     padding: 10px;
     transition: 0.3s;
     border-radius: 5px;
@@ -548,27 +560,33 @@ input, textarea {
 input.remark {
     padding: 80px;
 }
+
 form {
-  width: 350px;
-  margin: auto;
+    width: 350px;
+    margin: auto;
 }
+
 textarea {
-  height: 200px;
+    height: 200px;
 }
+
 label {
-  margin-bottom: 20px;
-  display: block;
+    margin-bottom: 20px;
+    display: block;
 }
-input:focus, textarea:focus {
-  outline: 0;
-  background:  #f68484;
-   }
-.from-wrap{ 
-   
-     padding: 20px;
-     }
-.from-wrap h2{
+
+input:focus,
+textarea:focus {
+    outline: 0;
+    background: #07bfe3;
+}
+
+.from-wrap {
+    background: #f68484;
+    padding: 40px;
+}
+
+.from-wrap h2 {
     color: #fff;
     margin: auto;
 }
-    
