@@ -174,6 +174,7 @@ h2 {
     padding: 0px;
     margin-bottom: 30px;
     margin: auto;
+    text-align: center;
 }
 
 h3 {
@@ -224,11 +225,12 @@ h3 {
     max-width: 800px;
     margin: auto;
 }
-
 .features img {
     max-width: 60px;
 }
-
+.features h2{
+    margin-bottom: 20px;
+}
 .features h2:after {
     margin: auto;
 }
@@ -336,7 +338,6 @@ footer img {
     display: block;
     margin: auto;
 }
-
 .custom-shape-divider-bottom-1617375300 {
     position: absolute;
     bottom: 0;
@@ -427,7 +428,6 @@ footer img {
     padding: 0px;
     margin-top: 0px;
     font-weight: 400;
-    margin: 0px;
     font-size: 38px;
     margin-bottom: 35px;
 }
@@ -465,7 +465,6 @@ footer img {
     padding: 0px;
     margin-top: 0px;
     font-weight: 400;
-    margin: 0px;
     font-size: 38px;
     margin-bottom: 35px;
 }
@@ -511,7 +510,9 @@ footer img {
     align-items: center;
     width: 800px;
 }
-
+.about6{
+      position: relative;
+}
 span {
     font-weight: 700;
 }
@@ -589,4 +590,15 @@ textarea:focus {
 .from-wrap h2 {
     color: #fff;
     margin: auto;
+}
+.fotorama__dot.fotorama__dot {
+    border-color: #f78585;
+}
+.fotowrap {
+    max-width: 500px;
+    text-align: center;
+    margin: 40px auto;
+}
+.workshop .custom-shape-divider-bottom-1617375206 .shape-fill {
+    fill:#f78585;
 }
