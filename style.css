@@ -103,26 +103,31 @@ header .container {
 .pricelist .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(img/cake10.jpg) center top 25%;
+        background-attachment: fixed;
 }
 
 .product .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(img/product.jpg) center top 20%;
+        background-attachment: fixed;
 }
 
 .workshop .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url(img/stor.jpg) center top 20%;
+        background-attachment: fixed;
 }
 
 .recipes .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url(img/recipes.jpg) center top 30%;
+        background-attachment: fixed;
 }
 
 .contact .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(img/contact.jpeg) center top 50%;
+        url(img/contact.jpeg) center top 64%;
+        background-attachment: fixed;
 }
 
 .logo {
@@ -501,12 +506,13 @@ footer img {
     font-size: 38px;
     width: 140px;
     margin-top: 30px;
+    margin-bottom: 35px;
 }
 
 .about6 .container {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-gap: 60px;
+    grid-gap: 90px;
     align-items: center;
     width: 800px;
 }
@@ -530,7 +536,7 @@ input,
 textarea {
     font: inherit;
     color: inherit;
-    color: #fff;
+    color: #000;
     background: none;
     border: 1px solid #fff;
     padding: 10px;
@@ -543,19 +549,19 @@ textarea {
 .news .button {
     text-decoration: none;
     color: white;
-    background: #07bfe3;
+    background: #000;
     padding: 10px 23px;
     display: inline-block;
     border-radius: 10px;
     transition: 1s;
     font-size: 14px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     margin-top: 12px;
 }
 
 .news .button:hover {
-    background: #5482fa;
-    color: white;
+    background: #fff;
+    color: #07bfe3;
 }
 
 input.remark {
@@ -579,7 +585,7 @@ label {
 input:focus,
 textarea:focus {
     outline: 0;
-    background: #07bfe3;
+    background: #fff;
 }
 
 .from-wrap {
@@ -595,10 +601,25 @@ textarea:focus {
     border-color: #f78585;
 }
 .fotowrap {
-    max-width: 500px;
+    max-width: 1920px;
     text-align: center;
-    margin: 40px auto;
+    margin: auto;
 }
 .workshop .custom-shape-divider-bottom-1617375206 .shape-fill {
     fill:#f78585;
+}
+.from-wrap .button {
+    text-decoration: none;
+    color: white;
+    background: #000;
+    padding: 10px 23px;
+    display: inline-block;
+    border-radius: 15px;
+    transition: 1s;
+    font-size: 14px;
+    border: 0;
+}
+.from-wrap .button:hover {
+    background: #fff;
+    color: #07bfe3;
 }
