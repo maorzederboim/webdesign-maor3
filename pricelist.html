@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <title>עוגות לרכישה | החנות הרשמית של אור שפיץ</title>
     <link rel="stylesheet" href="style.css">
+    <!-- jQuery 1.8 or later, 33 KB -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Fotorama from CDNJS, 19 KB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 </head>
 
 <body class="pricelist">
@@ -37,67 +43,81 @@
     </div>
     <div class="about2">
         <div class="container">
-        <h2>עוגות לרכישה</h2>
-<ul class="gallery">
-   <li><img src="img/cake3.jpg" alt="">
-   <div class="title1">White Number cake
-</div>
-  <div class="price1">550 ש"ח</div>
-   </li>
-   <li><img src="img/cake%2012.jpeg" alt="">
-      <div class="title1">Heylo cake
-</div>
-  <div class="price1">550 ש"ח</div>
-  </li>
-   <li><img src="img/cake%2013.jpeg" alt="">
-      <div class="title1">Elsa cake
-</div>
-  <div class="price1">550 ש"ח</div>
-   </li>
-    <li><img src="img/cake%206.jpeg" alt="">
-       <div class="title1">Gold flowers S
-</div>
-  <div class="price1">290 ש"ח</div>
-    </li>
-     <li><img src="img/cake%207.jpeg" alt="">
-        <div class="title1">Croissant cake
-</div>
-  <div class="price1">380 ש"ח</div>
-     </li>
-      <li><img src="img/cake%208.jpeg" alt="">
-         <div class="title1">Ocean cake
-</div>
-  <div class="price1">380 ש"ח</div>
-      </li>
-       <li><img src="img/cake%209.jpg" alt="">
-       <div class="title1">Pink cake
-</div>
-  <div class="price1">380 ש"ח</div>
-          </li> 
-        <li><img src="img/cake%2014.jpg" alt="">
-           <div class="title1">Yarin's Cake
-</div>
-  <div class="price1">550 ש"ח</div>
-        </li>
-         <li><img src="img/cake%2011.jpeg" alt="">
-            <div class="title1">Bubbles cake
-</div>
-  <div class="price1">550 ש"ח</div>
-         </li>
-</ul>
-       
+            <h2>עוגות לרכישה</h2>
+            <ul class="gallery">
+                <li><img src="img/cake3.jpg" alt="">
+                    <div class="title1">White Number cake
+                    </div>
+                    <div class="price1">550 ש"ח</div>
+                </li>
+                <li><img src="img/cake%2012.jpeg" alt="">
+                    <div class="title1">Heylo cake
+                    </div>
+                    <div class="price1">550 ש"ח</div>
+                </li>
+                <li><img src="img/cake%2013.jpeg" alt="">
+                    <div class="title1">Elsa cake
+                    </div>
+                    <div class="price1">550 ש"ח</div>
+                </li>
+                <li><img src="img/cake%206.jpeg" alt="">
+                    <div class="title1">Gold flowers S
+                    </div>
+                    <div class="price1">290 ש"ח</div>
+                </li>
+                <li><img src="img/cake%207.jpeg" alt="">
+                    <div class="title1">Croissant cake
+                    </div>
+                    <div class="price1">380 ש"ח</div>
+                </li>
+                <li><img src="img/cake%208.jpeg" alt="">
+                    <div class="title1">Ocean cake
+                    </div>
+                    <div class="price1">380 ש"ח</div>
+                </li>
+                <li><img src="img/cake%209.jpg" alt="">
+                    <div class="title1">Pink cake
+                    </div>
+                    <div class="price1">380 ש"ח</div>
+                </li>
+                <li><img src="img/cake%2014.jpg" alt="">
+                    <div class="title1">Yarin's Cake
+                    </div>
+                    <div class="price1">550 ש"ח</div>
+                </li>
+                <li><img src="img/cake%2011.jpeg" alt="">
+                    <div class="title1">Bubbles cake
+                    </div>
+                    <div class="price1">550 ש"ח</div>
+                </li>
+            </ul>
+
         </div>
     </div>
-
+    <div class="slide">
+        <div class="fotowrap">
+            <!-- Add images to <div class="fotorama"></div> -->
+            <div class="fotorama" data-width="1920" data-height="300" data-direction="rtl" data-fit="cover" data-width="100%" data-ratio="1200/700" data-autoplay="4000" data-nav="false">
+                <img src="img/gallery%2016.jpg">
+                <img src="img/gallery%2015.jpg">
+                <img src="img/gallery%2014.jpg">
+                <img src="img/gallery%2017.jpg">
+                <img src="img/gallery%2018.jpg">
+                <img src="img/gallery%2019.jpg">
+            </div>
+        </div>
+    </div>
     <footer>
-        <p>&copy; 2021 אור שפיץ |
-            בניית אתר:
-            <a href="">מאור צדרבוים</a>
-        </p>
         <p class="social">
             <a target="_blank" href="https://www.facebook.com/orshpitzcakes"><img src="img/facebook.svg" alt="פייסבוק"></a>
             <a target="_blank" href="https://www.instagram.com/or_shpitz/"><img src="img/instagram.svg" alt="אינסטגרם"></a>
         </p>
+        <p>&copy; 2021 אור שפיץ |
+            בניית אתר:
+            <a href="">מאור צדרבוים</a>
+        </p>
         <div>אייקונים <a target="_blank" href="https://www.flaticon.com/" title="Flaticon">flaticon</a></div>
     </footer>
-</body></html>
+</body>
+
+</html>

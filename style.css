@@ -57,6 +57,20 @@ h1 {
     margin-top: 30px;
     font-family: 'ambivalenti', arial, sans-serif;
     padding: 0px;
+    filter: text-shadow(0px 5px 0px rgba(0, 0, 0, 0.5));
+    animation: appear 1s ease alternate 1;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
 }
 
 nav ul {
@@ -103,31 +117,32 @@ header .container {
 .pricelist .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(img/cake10.jpg) center top 25%;
-        background-attachment: fixed;
+    background-attachment: fixed;
 }
 
 .product .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(img/product.jpg) center top 20%;
-        background-attachment: fixed;
+    background-attachment: fixed;
 }
 
 .workshop .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url(img/recipes.jpg) center top 30%;
-        background-attachment: fixed;
+    background-attachment: fixed;
 }
+
 .contact .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url(img/contact.jpeg) center top 64%;
-        background-attachment: fixed;
+    background-attachment: fixed;
 }
 
 .logo {
     display: block;
     margin: 10px auto;
     padding: 10px;
-    filter: drop-shadow(60);
+    filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.5));
 }
 
 .container {
@@ -191,16 +206,28 @@ h3 {
     background: #07bfe3;
     padding: 10px 23px;
     display: inline-block;
-    border-radius: 15px;
+    border-radius: 18px;
     transition: 1s;
     font-size: 14px;
     border: 0;
 }
 
+@keyframes mybutton {
+    0% {
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(1.1)
+    }
+}
+
 .button:hover {
     background: #5482fa;
     color: white;
+    animation: mybutton .3s linear alternate infinite;
 }
+
 
 .banner .container {
     margin: auto;
@@ -215,6 +242,24 @@ h3 {
     color: #fff;
 }
 
+.features a {
+    text-decoration: none;
+}
+
+.features a:hover img {
+    animation: pluse .3s linear alternate infinite;
+}
+
+@keyframes pluse {
+    0% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(-5deg)
+    }
+}
+
 .features ul {
     list-style: none;
     padding: 0;
@@ -224,14 +269,21 @@ h3 {
     max-width: 800px;
     margin: auto;
 }
+
 .features img {
     max-width: 60px;
 }
-.features h2{
+
+.features h2 {
     margin-bottom: 20px;
 }
+
 .features h2:after {
     margin: auto;
+}
+
+.features p {
+    color: #fff;
 }
 
 ul {
@@ -244,21 +296,59 @@ p {
     font-size: 15px;
 }
 
+.price {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px;
+}
+
+.price img {
+    max-width: 80%;
+}
+
+.price .gallery {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-bottom: 0;
+}
+
+.price h2 {
+    margin-bottom: 10px;
+    color: #07bfe3;
+}
+
+.price .price2 {
+    text-align: center;
+}
+
+.price2 .button {
+    background: #000;
+    margin-top: 30px;
+}
+
+.price2 .button:hover {
+    background: #f68484;
+    color: white;
+    animation: mybutton .3s linear alternate infinite;
+}
+
 footer {
     background: #000;
     color: #fff;
     text-align: center;
-    padding: 25px;
-    font-size: 15px;
+    padding: 35px;
+    font-size: 12px;
 }
 
 footer a {
     color: #07bfe3;
+    font-size: 12px;
 }
 
 footer p {
     max-width: 1000px;
     font-size: 12px;
+    padding: 10px;
 }
 
 footer img {
@@ -337,6 +427,7 @@ footer img {
     display: block;
     margin: auto;
 }
+
 .custom-shape-divider-bottom-1617375300 {
     position: absolute;
     bottom: 0;
@@ -362,46 +453,16 @@ footer img {
     list-style: none;
     padding: 0px;
     columns: 1;
-    width: 500px;
+    width: 300px;
     margin-top: 40px;
-    font-size: 18px;
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .menu li {
     display: flex;
+    justify-content: center;
     margin-bottom: 17px;
-}
-
-.line {
-    flex: 1;
-    border-bottom: 2px solid #07bfe3;
-    height: 1em;
-    margin: 0 5px;
-}
-
-.price {
-    font-weight: bold;
-}
-
-.price-wrap {
-    padding: 56px 0;
-}
-
-.price-wrap img {
-    width: 100px;
-    margin: auto;
-    display: block;
-}
-
-.price-wrap h2 {
-    text-align: center;
-    margin-top: 0;
-}
-
-.price-wrap h2:after {
-    margin: auto;
 }
 
 .gallery {
@@ -483,7 +544,7 @@ footer img {
 }
 
 .about4 {
-    padding-top: 40px;
+    padding-top: 70px;
     background: #f68484;
 }
 
@@ -492,27 +553,28 @@ footer img {
 }
 
 .about6 h2 {
-    margin: 0px;
     color: #07bfe3;
-    content: "";
-    border-bottom: 3px solid #07bfe3;
     font-weight: 400;
-    font-size: 38px;
-    width: 140px;
+    font-size:28px;
+    width: 190px;
     margin-top: 30px;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 }
 
 .about6 .container {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 90px;
-    align-items: center;
-    width: 800px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-content: center;
+    width:800px;
+    padding: 20px;
+    padding-bottom: 10px;
 }
-.about6{
-      position: relative;
+
+.about6 {
+    position: relative;
 }
+
 span {
     font-weight: 700;
 }
@@ -531,7 +593,6 @@ textarea {
     font: inherit;
     color: inherit;
     color: #000;
-    background: none;
     border: 1px solid #fff;
     padding: 10px;
     transition: 0.3s;
@@ -549,7 +610,7 @@ textarea {
     border-radius: 10px;
     transition: 1s;
     font-size: 14px;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
     margin-top: 12px;
 }
 
@@ -584,24 +645,29 @@ textarea:focus {
 
 .from-wrap {
     background: #f68484;
-    padding: 40px;
+    padding: 70px;
 }
 
 .from-wrap h2 {
     color: #fff;
     margin: auto;
+    font-size: 38px;
 }
+
 .fotorama__dot.fotorama__dot {
     border-color: #f78585;
 }
+
 .fotowrap {
     max-width: 1920px;
     text-align: center;
     margin: auto;
 }
+
 .workshop .custom-shape-divider-bottom-1617375206 .shape-fill {
-    fill:#f78585;
+    fill: #f78585;
 }
+
 .from-wrap .button {
     text-decoration: none;
     color: white;
@@ -613,7 +679,15 @@ textarea:focus {
     font-size: 14px;
     border: 0;
 }
+
 .from-wrap .button:hover {
     background: #fff;
     color: #07bfe3;
+}
+
+iframe {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 90px;
 }
