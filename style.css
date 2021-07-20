@@ -678,6 +678,7 @@ textarea:focus {
     transition: 1s;
     font-size: 14px;
     border: 0;
+    margin-top: 12px;
 }
 
 .from-wrap .button:hover {
